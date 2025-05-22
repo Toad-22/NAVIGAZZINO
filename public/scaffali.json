@@ -194,8 +194,9 @@
   },
   {
     "scaffale": "I6 - Scaffaliera - Avanti",
-    "serie": ["SE.E90 FINO A 240", "SE.I90 FINO A 250", "SE.I0 FINO A 85", "SE.E4 FINO A 80", "618", "619", "617"],
-    "codici_extra": []
+    "serie": ["SE.E90 FINO A 240", "SE.I90 FINO A 250", "SE.I0 FINO A 85", "SE.E4 FINO A 80", "618", "619", "617", "JK050", "T2ED050", "T4FE070", "T2ED045","T2EE100","RT2D070", "T2EE060",
+     "T7FC0", "T4CBI30", "T4CB120", "T2EE240/VB406", "SA", "MI15", "MR72", "MR64", "HU648032", "MR18", "222SM85T"],
+    "codici_extra": ["MR", "MI"]
   },
   {
     "scaffale": "I6 - Scaffaliera - Dietro",

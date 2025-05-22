@@ -60,23 +60,25 @@ export default function RicercaSerie() {
 
   return (
     <div className="min-h-screen bg-white flex flex-col items-center px-4 pt-6">
-      <div className="w-full max-w-5xl px-4 mb-6 flex justify-center relative">
+      <div className="w-full max-w-5xl px-4 mb-6 flex flex-col sm:flex-row sm:justify-between items-center">
         <img
           src="/logo.png"
           alt="Logo Azienda"
-          className="h-[12.5vh] object-contain"
+          className="h-12 sm:h-[12.5vh] object-contain"
         />
 
         <button
           onClick={() => setMatchEsatto(!matchEsatto)}
-          className={`absolute right-0 top-1/2 -translate-y-1/2 flex items-center gap-2 px-3 py-2 text-sm rounded-full shadow transition-all duration-200 ${
-            matchEsatto ? 'bg-blue-700 text-white' : 'bg-gray-200 text-gray-800'
-          }`}
+          className={`mt-4 sm:mt-0 flex items-center gap-2 px-3 py-2 
+            text-xs sm:text-sm rounded-full shadow transition-all duration-200 ${
+              matchEsatto ? 'bg-blue-700 text-white' : 'bg-gray-200 text-gray-800'
+            }`}
         >
-            <span>{matchEsatto ? "🔒" : "🔓"}</span>
-            <span>{matchEsatto ? "Match esatto ON" : "Match esatto OFF"}</span>
+          <span>{matchEsatto ? "🔒" : "🔓"}</span>
+          <span>{matchEsatto ? "Match esatto ON" : "Match esatto OFF"}</span>
         </button>
       </div>
+
 
 
 
