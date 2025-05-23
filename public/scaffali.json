@@ -1,101 +1,127 @@
 [
   {
     "scaffale": "A1",
+    "slug":"A1",
     "serie": ["240", "223", "241"],
     "codici_extra": ["98202", "87408", "89307", "89412"]
   },
   {
     "scaffale": "A8 - lato destro",
+    "slug":"A8",
     "serie": ["NJ23", "NJ2", "NJ3"],
     "codici_extra": []
   },
   {
     "scaffale": "A8 - lato sinistro",
+    "slug":"A8",
     "serie": ["323", "313", "303", "329", "320"],
     "codici_extra": []
   },
   {
     "scaffale": "A0",
+    "slug":"A0",
     "serie": ["U236", "U422", "U413", "U414", "U311", "U416", "U406", "U407", "U410", "U411", "U312", "U415", "U314", "U315", "U211", "U230"],
     "codici_extra": []
   },
   {
     "scaffale": "A2",
+    "slug":"A2",
     "serie": ["U201", "U222", "U224", "U315", "U316", "U417"],
     "codici_extra": []
   },
   {
     "scaffale": "A3",
+    "slug":"A3",
     "serie": ["894", "542", "532", "533", "534", "522"],
     "codici_extra": []
   },
   {
     "scaffale": "A4",
+    "slug":"A4",
     "serie": ["292", "293", "FSV315", "FSV316", "FSV305", "R"],
     "codici_extra": []
   },
   {
     "scaffale": "A5",
+    "slug":"A5",
     "serie": ["DH", "DKV", "FSV"],
     "codici_extra": []
   },
   {
     "scaffale": "A6 - lato sinistro",
+    "slug":"A6",
     "serie": ["512", "521", "513", "511", "222", "294", "293", "FRM"],
     "codici_extra": []
   },
   {
     "scaffale": "A6 - lato destro",
+    "slug":"A6",
     "serie": ["222", "213"],
     "codici_extra": []
   },
   {
   "scaffale": "A7 - lato sinistro",
+  "slug":"A7",
   "serie": ["231", "230", "223", "222"],
   "codici_extra": []
   },
   {
   "scaffale": "A7 - lato destro",
+  "slug":"A7",
   "serie": ["322", "330", "331", "332", "302", "232"],
   "codici_extra": ["JH211749", "JH211710"]
   },
   {
   "scaffale": "A9 - lato sinistro",
+  "slug":"A9",
   "serie": ["NJ3", "NU2", "NU3"],
   "codici_extra": ["NJ2330"]
 },
 {
   "scaffale": "A9 - lato destro",
+  "slug":"A9",
   "serie": ["3308", "NJ3", "NJ23", "33", "32", "42", "43", "3306", "3207", "3205", "3208", "3212"],
   "codici_extra": ["NJ2322"]
 },
 {
   "scaffale": "A11 - Cuscinetti alte temperature BHT",
+  "slug":"A11",
   "serie": ["608", "60", "63", "62"],
   "codici_extra": ["BHT"]
 },
 {
   "scaffale": "A13 - lato destro",
+  "slug":"A13",
   "serie": ["NJ322", "NJ22", "NJ2"],
   "codici_extra": ["SD"]
 },
 {
+  "scaffale": "A12 - Cassettiera",
+  "slug":"A12",
+  "serie": ["G8X12X3 Fino a G50X62X5", "G55X63X5, 70X78X5, GR, DH, DS"],
+  "codici_extra": []
+},
+{
   "scaffale": "A15",
+  "slug":"A15",
   "serie": ["UCP", "UCF", "SNV", "SG", "RCJTY", "FL"],
   "codici_extra": []
 },
 {
   "scaffale": "A16",
+  "slug":"A16",
   "serie": ["UCFC", "RMEV", "UCTX", "UCT", "RTUEV", "UCFX"],
   "codici_extra": []
 },
 {
   "scaffale": "A17 - lato sinistro ECONOMICI",
+  "slug":"A17",
   "serie": ["UCP", "512", "511", "UCFC", "22", "294", "293", "23", "511", "522"],
   "codici_extra": ["ECO"]
 },
 {
   "scaffale": "A17 - lato destro ECONOMICI",
+  "slug":"A17",
   "serie": [
     "160", "72", "63", "33", "320", "631503", "12", "518599",
     "43", "13", "513", "514", "532", "73", "NTN36", "NDK", "NFR310/10"
@@ -104,118 +130,141 @@
 },
 {
   "scaffale": "A18 - lato sinistro ECONOMICI",
+  "slug":"A18",
   "serie": ["622", "42", "63", "33", "32", "623"],
   "codici_extra": ["ECO"]
 },
 {
   "scaffale": "A18 - lato destro",
+  "slug":"A18",
   "serie": ["60", "62", "64", "630"],
   "codici_extra": ["ECO"]
 },
 {
   "scaffale": "A19 - lato sinistro",
+  "slug":"A19",
   "serie": ["63", "22", "73", "72", "733", "70"],
   "codici_extra": []
 },
 {
   "scaffale": "A19 - lato destro",
+  "slug":"A19",
   "serie": ["63", "623", "64", "22", "23", "73"],
   "codici_extra": []
 },
 {
   "scaffale": "A20 - lato sinistro",
+  "slug":"A20",
   "serie": ["62", "622"],
   "codici_extra": []
 },
 {
   "scaffale": "A20 - lato destro",
+  "slug":"A20",
   "serie": ["60", "619", "6", "630"],
   "codici_extra": []
 },
 {
   "scaffale": "A21",
+  "slug":"A21",
   "serie": ["302 economico", "NU3", "NU2", "NU23", "323 economico", "322 economico", "313 economico", "303 economico", "NU22", "619", "332 economico", "303", "302", "331 economico", "330 economico"],
   "codici_extra": ["ECO", "22876"]
 },
 {
   "scaffale": "A22",
+  "slug":"A22",
   "serie": ["618", "619"],
   "codici_extra": []
 },
 {
   "scaffale": "A23",
+  "slug":"A23",
   "serie": ["618", "619"],
   "codici_extra": []
 },
 {
   "scaffale": "A24",
+  "slug":"A24",
   "serie": ["618", "626", "635", "203", "202", "607", "608", "609", "625", "624", "627", "623", "629", "634", "619", "QJ2", "QJ3"],
   "codici_extra": []
 },
 {
     "scaffale": "I0",
+    "slug":"I0",
     "serie": ["B70", "S70", "B72", "S72", "VCM70"],
     "codici_extra": ["BAX100", "BAX70"]
   },
   {
     "scaffale": "I1",
+    "slug":"I1",
     "serie": ["NN300 economico", "719", "B719", "NNU49"],
     "codici_extra": ["NNU4944", "7048", "DSTR007", "3MW220WM CR", "DUM F5637", "7249"]
   },
   {
     "scaffale": "I2",
+    "slug":"I2",
     "serie": ["DSTR213", "DSTR001", "GNU12770", "AR51226", "ARA51022 NAD", "UKF", "CP157095", "CPR870125", "DLF1212", "RKX90C", "AXZ", "PKR862C", "PFVR", "PFD", "FC", "R220V", "1400824/140140GE0", "101040/101080", "112040/112085P", "GC", "GCL", "FRR", "RKXR"],
     "codici_extra": []
   },
   {
     "scaffale": "I3 - Avanti",
+    "slug":"I3",
     "serie": ["719", "718", "70", "HSS70", "HC", "BSA2"],
     "codici_extra": ["BSA 2"]
   },
   {
     "scaffale": "I3 - Dietro",
+    "slug":"I3",
     "serie": ["70", "B70", "72"],
     "codici_extra": []
   },
   {
     "scaffale": "I4",
+    "slug":"I4",
     "serie": ["HSS719", "S719", "B719"],
     "codici_extra": []
   },
   {
     "scaffale": "I5 - Avanti",
+    "slug":"I5",
     "serie": ["GRAE", "162", "YET", "362", "GYE", "562", "UC2", "YAR", "UK2", "202_KRR", "NPP", "SB2", "GS812", "NKI", "NK", "RAT35", "DRS", "NKS", "GE", "GRA", "NKIS", "FLCTE", "FLCTEY", "RCJTZ", "RHE", "RALE25_NPP", "RFE", "RATY", "ZL4203", "GWN", "SD", "KGSN", "GW", "KASK" ],
     "codici_extra": ["RA100RR", "NK17025", "F-619432-0011.GEH.ASE", "GLE30.KRR", "G5206", "NJ232 appoggiati", "SL0450 appoggiati"]
   },
   {
     "scaffale": "I5 - Dietro",
+    "slug":"I5",
     "serie": ["SL0450-PP", "NNF5015", "SL1829", "SL1830", "SL1850", "LR3572", "KH8-10", "SL0248", "SL0149", "SL1822", "SL0248", "SL1849", "HFL", "KB2558", "HFL3030", "SL0249"],
     "codici_extra": []
   },
   {
     "scaffale": "I6 - Scaffaliera - Avanti",
+    "slug":"I6",
     "serie": ["SE.E90 FINO A 240", "SE.I90 FINO A 250", "SE.I0 FINO A 85", "SE.E4 FINO A 80", "618", "619", "617", "JK050", "T2ED050", "T4FE070", "T2ED045","T2EE100","RT2D070", "T2EE060",
      "T7FC0", "T4CBI30", "T4CB120", "T2EE240/VB406", "SA", "MI15", "MR72", "MR64", "HU648032", "MR18", "222SM85T"],
     "codici_extra": ["MR", "MI"]
   },
   {
     "scaffale": "I6 - Scaffaliera - Dietro",
+    "slug":"I6",
     "serie": ["812", "WS812", "GS812", "K812", "811", "811 economico", "NA30", "NA30 economico", "NA31", "NA2300", 
     "NABI1025", "NA21 economico", "NAX economico", "NAM", "NA20 economico", "NA", "RNAX30", "NBI economico", "NA10", "NAS10", "NASTR20 economico", "73 TVP", "72 TVP", "70 TVP", "GNE40KRRB", "GLCTE20 FINO A 35", "BSRI51-C", "E30KRR", "E4J-KLL", "LASE30-N", "GRA25", "811 economici", "UFL004 FINO A 006 economici", "LCTE05", "F205 economico"],
     "codici_extra": ["VFL004 economico", "SS-SB206.2RS"]
   },
   {
     "cassettiera": "I7 - Cassettiera",
+    "slug":"I7",
     "serie": ["FRM52/2 FINO A 215/14"],
     "codici_extra": ["FRM"]
   },
   {
     "scaffale": "I8 - Scaffaliera - Avanti",
-    "serie": [],
+    "slug":"I8",
+    "serie": ["prova"],
     "codici_extra": []
   },
   {
     "scaffale": "I8 - Scaffaliera - Dietro",
+    "slug":"I8",
     "serie": ["60 M", "600 economico", "600", "63", "63 economico", "32", "222", "223",
       "QJ3", "QJ2 S1", "619 M", "WR-SW 8 FINO A 290", "SB.BR 10 FINO A 300", "62", "K13X17X10 FINO A 72X80X20", "TLK",
       "DSM", "WAC 25-10-10 FINO A 40-14-14", "W7C", "ETP CLASSIC",
@@ -226,26 +275,31 @@
   },
   {
     "scaffale": "I9 - Cassettiera",
+    "slug":"I9",
     "serie": ["SE.E13 FINO A 67", "SE.I8 FINO A I90"],
     "codici_extra": []
   },
   {
     "scaffale": "I10 - Scaffaliera - Avanti",
+    "slug":"I10",
     "serie": ["N3", "N2", "N-NF4", "KBK", "NF22", "NF23", "NP2", "NF2", "NF3", "K"],
     "codici_extra": [ "K20x30x30"]
   },
   {
     "scaffale": "I10 - Scaffaliera - Dietro",
+    "slug":"I10",
     "serie": ["13", "12", "GAY", "GE -HO"],
     "codici_extra": ["129", "127", "126", "108"]
   },
   {
     "scaffale": "I11 - Cassettiera",
+    "slug":"I11",
     "serie": ["NKX", "GAY", "GE", "NKRX"],
     "codici_extra": []
   },
   {
     "scaffale": "I12 - Scaffaliera - Avanti",
+    "slug":"I12",
     "serie": ["CR990", "CR991", "CR992",  "CR993", "CR994", "NU10 economico", "GE30SX", "GE50FW", "GX25", "GX80", "GE120", "GE110", "GE70",
       "GE100", "GK25-DO", "CR994", "CR995", "CR996", "CR997", "CR998", "NA49", "NUTR1542", "NUTR1747", "NUTR2052", "NUTR2562",
       "NUTR3072", "NUTR3580", "NUTR4090", "NUTR45100", "NUTR50110", "NUTR15", "NUTR17", "NUTR20", "NUTR25", "NUTR30", "NUTR35", "NUTR35 economico",
@@ -255,6 +309,7 @@
   },
   {
     "scaffale": "I12 - Scaffaliera - Dietro",
+    "slug":"I12",
     "serie": [
       "63 isolati", "62 isolati", "HC62", "HC63", "G110X", "GRA112", "GVK100", "GRA102", "GRA108", "RA110",
       "GRA103", "GSH40", "202KLLZ", "207KRR", "NJ55X110", "NKK17 FINO A NKK70", "NK10" ],
@@ -262,122 +317,146 @@
   },
   {
     "scaffale": "I13 - Cassettiera",
+    "slug":"I11",
     "serie": ["K"],
     "codici_extra": []
   },
   {
     "scaffale": "I14 - Scaffaliera",
+    "slug":"I14",
     "serie": ["NUTR","M","NA69","MT","KR","NUKR","600676,ZL","LNU326-F1-C4","BC1-7229","Z-573489","HJ.ZL","NNTR","NAO",
               "NA49","NA48","C6002","S6082RZ.TN9","S6","S619","NA4916"],
     "codici_extra": []
   },
   {
     "scaffale": "I15 - Cassettiera",
+    "slug":"I15",
     "serie": ["6 THB-TVH economici", "USNU", "UK", "UKC", "KK", "DC", "NF", "BH", "NAXK", "NKX", "NAX"],
     "codici_extra": ["600"]
   },
   {
     "scaffale": "I16 - Scaffaliera - ANELLI DI TENUTA VITON LABBRO SINGOLO",
+    "slug":"I16",
     "serie": ["VI.G"],
     "codici_extra": ["VI"]
   },
   {
     "scaffale": "I17 -  Cassettiera - ANELLI PICCOLE DIMENSIONI",
+    "slug":"I17",
     "serie": ["AT.G", "AT.GP"],
     "codici_extra": ["AT"]
   },
   {
     "scaffale": "I18 - Scaffaliera",
+    "slug":"I18",
     "serie": ["VI.GP", "AT.G","AT.GP"],
     "codici_extra": ["VI", "AT"]
   },
   {
     "scaffale": "I19 - Scaffaliera - Dietro",
+    "slug":"I19",
     "serie": ["NJ22 - TVP", "NJ23 - TVP", "617208"],
     "codici_extra": ["NJ22", "NJ23"]
   },
   {
     "scaffale": "I19 - Scaffaliera - Avanti",
+    "slug":"I19",
     "serie": ["NU22 - TVP", "NU23 - TVP"],
     "codici_extra": ["NU22", "NU23"]
   },
   {
     "scaffale": "I20 -  Cassettiera",
+    "slug":"I20",
     "serie": ["KRV", "KR", "EXR", "RAX", "RAXPZ", "EXRKRE", "M"],
     "codici_extra": []
   },
   {
     "scaffale": "I21 - Scaffaliera - Avanti",
+    "slug":"I21",
     "serie": ["NN30", "NN30 economico", "NUP2", "NUP3", "2344", "N10", "N10 economico"],
     "codici_extra": []
   },
   {
     "scaffale": "I21 - Scaffaliera - Dietro",
+    "slug":"I21",
     "serie": ["NU10 - TVP", "NU10 economico", "NU20 - TVP","2344","2347", "WS222", "WS223", "BS2-22"],
     "codici_extra": ["NU10", "NU20"]
   },
   {
     "scaffale": "I22 -  Cassettiera",
+    "slug":"I22",
     "serie": ["BPM", "R151267013", "R061206010", "NUKR", "KR"],
     "codici_extra": []
   },
   {
     "scaffale": "I23 - Scaffaliera - Avanti",
+    "slug":"I23",
     "serie": ["73", "NUP3", "NUP23", "NUP22"],
     "codici_extra": []
   },
   {
     "scaffale": "I23 - Scaffaliera - Dietro",
+    "slug":"I23",
     "serie": ["NUP2", "NUP3"],
     "codici_extra": []
   },
   {
     "scaffale": "I24 - Scaffaliera",
+    "slug":"I24",
     "serie": ["VI.GP", "AT.GP", "AT.G"],
     "codici_extra": ["AT","VI"]
   },
   {
     "scaffale": "I25 - Scaffaliera",
+    "slug":"I25",
     "serie": ["33", "32", "160"],
     "codici_extra": []
   },
   {
     "scaffale": "I26 - Scaffaliera AGENTI",
+    "slug":"I26",
     "serie": [],
-    "codici_extra": []
+    "codici_extra": ["pasotti"]
   },
   {
     "scaffale": "I27 - Scaffaliera",
+    "slug":"I27",
     "serie": ["62 - TB", "60 - TB", "63 - TB", "62 - TVH", "62 - THB"],
     "codici_extra": ["60", "62", "63"]
   },
   {
     "scaffale": "I28 - Scaffaliera - Sinistra",
+    "slug":"I28",
     "serie": ["72", "73", "74"],
     "codici_extra": []
   },
   {
     "scaffale": "I28 - Scaffaliera - Destra",
+    "slug":"I28",
     "serie": ["63 - M", "63", "62 - M","74", "72"],
     "codici_extra": ["62", "63"]
   },
   {
     "scaffale": "I29 -  Cassettiera",
+    "slug":"I29",
     "serie": ["HK", "M", "BO", "L", "E"],
     "codici_extra": []
   },
   {
     "scaffale": "I30 -  Cassettiera",
+    "slug":"I30",
     "serie": ["KH", "HF", "HFL", "LBBS", "KB", "982"],
     "codici_extra": []
   },
   {
     "scaffale": "I31 -  Cassettiera",
+    "slug":"I31",
     "serie": ["K", "NAST", "STO"],
     "codici_extra": []
   },
   {
     "scaffale": "I32 -  Scaffale",
+    "slug":"I32",
     "serie": [],
     "codici_extra": []
   }

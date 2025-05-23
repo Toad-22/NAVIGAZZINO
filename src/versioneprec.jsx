@@ -1,15 +1,12 @@
 import { useEffect, useState } from "react";
+import MappaMagazzino from './MappaMagazzino';
 
 const STORAGE_KEY = "magazzinoCuscinetti";
 
 export default function RicercaSerie() {
   const [query, setQuery] = useState("");
   const [datiMagazzino, setDatiMagazzino] = useState([]);
-  const [showForm, setShowForm] = useState(false);
-  const [nuovoScaffale, setNuovoScaffale] = useState("");
-  const [nuoveSerie, setNuoveSerie] = useState("");
   const [matchEsatto, setMatchEsatto] = useState(false);
-
 
   useEffect(() => {
     const stored = localStorage.getItem(STORAGE_KEY);
@@ -37,48 +34,35 @@ export default function RicercaSerie() {
     return allCodici.some((s) => {
       const valore = s.toLowerCase();
       const queryPulita = query.trim().toLowerCase();
-
-    return matchEsatto
-      ? valore === queryPulita
-      : valore.startsWith(queryPulita);
+      return matchEsatto
+        ? valore === queryPulita
+        : valore.startsWith(queryPulita);
     });
   });
 
-  const aggiungiScaffale = () => {
-    if (!nuovoScaffale || !nuoveSerie) return;
-    const nuoveSerieArray = nuoveSerie.split(",").map(s => s.trim());
-    const nuovoItem = {
-      scaffale: nuovoScaffale,
-      serie: nuoveSerieArray,
-      codici_extra: []
-    };
-    setDatiMagazzino([...datiMagazzino, nuovoItem]);
-    setNuovoScaffale("");
-    setNuoveSerie("");
-    setShowForm(false);
-  };
-
   return (
     <div className="min-h-screen bg-white flex flex-col items-center px-4 pt-6">
-      <div className="w-full max-w-5xl px-4 mb-6 flex justify-center relative">
+      <div className="w-full max-w-5xl px-4 mb-6
+                      flex flex-col items-center
+                      sm:grid sm:grid-cols-3 sm:items-center">
         <img
           src="/logo.png"
           alt="Logo Azienda"
-          className="h-[12.5vh] object-contain"
+          className="h-12 sm:h-[12.5vh] object-contain
+                     sm:col-start-2 sm:justify-self-center"
         />
 
         <button
           onClick={() => setMatchEsatto(!matchEsatto)}
-          className={`absolute right-0 top-1/2 -translate-y-1/2 flex items-center gap-2 px-3 py-2 text-sm rounded-full shadow transition-all duration-200 ${
-            matchEsatto ? 'bg-blue-700 text-white' : 'bg-gray-200 text-gray-800'
-          }`}
+          className={`mt-4 sm:mt-0
+            flex items-center gap-2 px-3 py-2 text-xs sm:text-sm rounded-full shadow
+            sm:col-start-3 sm:justify-self-end
+            ${matchEsatto ? 'bg-blue-700 text-white' : 'bg-gray-200 text-gray-800'}`}
         >
-            <span>{matchEsatto ? "🔒" : "🔓"}</span>
-            <span>{matchEsatto ? "Match esatto ON" : "Match esatto OFF"}</span>
+          <span>{matchEsatto ? "🔒" : "🔓"}</span>
+          <span>{matchEsatto ? "Match esatto ON" : "Match esatto OFF"}</span>
         </button>
       </div>
-
-
 
       <input
         type="text"
@@ -106,39 +90,12 @@ export default function RicercaSerie() {
         </div>
       </div>
 
-      {showForm && (
-        <div className="border p-4 rounded mb-6 bg-gray-50 mt-8 max-w-2xl w-full">
-          <h2 className="font-semibold mb-3 text-lg">Nuovo scaffale</h2>
-          <input
-            type="text"
-            placeholder="📁 Nome scaffale (es. B5)"
-            value={nuovoScaffale}
-            onChange={(e) => setNuovoScaffale(e.target.value)}
-            className="w-full p-2 border border-gray-300 rounded mb-2"
-          />
-          <input
-            type="text"
-            placeholder="🔢 Serie (es. 6200, 6300, NJ2)"
-            value={nuoveSerie}
-            onChange={(e) => setNuoveSerie(e.target.value)}
-            className="w-full p-2 border border-gray-300 rounded mb-4"
-          />
-          <button
-            onClick={aggiungiScaffale}
-            className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
-          >
-            Salva scaffale
-          </button>
+      {risultati.length > 0 && (
+        <div className="mt-6 w-full max-w-5xl">
+          <h3 className="text-lg font-semibold mb-2">Mappa Magazzino</h3>
+          <MappaMagazzino risultati={risultati} />
         </div>
       )}
-
-      <button
-        onClick={() => setShowForm(!showForm)}
-        className="mt-6 px-4 py-2 text-white bg-blue-600 hover:bg-blue-700 rounded"
-      >
-        {showForm ? "Annulla" : "➕ Aggiungi scaffale"}
-      </button>
     </div>
   );
 }
-
