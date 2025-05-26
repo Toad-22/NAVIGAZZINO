@@ -9,19 +9,26 @@ export default function RicercaSerie() {
   const [matchEsatto, setMatchEsatto] = useState(false);
 
   useEffect(() => {
-    const stored = localStorage.getItem(STORAGE_KEY);
-    if (stored) {
-      setDatiMagazzino(JSON.parse(stored));
-    } else {
-      fetch("/scaffali.json")
-        .then((res) => res.json())
-        .then((data) => {
-          // Caricamento dati: lo slug è già presente nel JSON
-          setDatiMagazzino(data);
-        })
-        .catch((err) => console.error("Errore nel caricamento JSON:", err));
-    }
-  }, []);
+  const storedRaw = localStorage.getItem(STORAGE_KEY);
+  let stored;
+  try { stored = storedRaw && JSON.parse(storedRaw); } catch {}
+
+  fetch("/scaffali.json")
+    .then(res => res.json())
+    .then(data => {
+      // data.version e data.scaffali
+      if (!stored || stored.version !== data.version) {
+        // versione nuova: aggiorno cache e state
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+        setDatiMagazzino(data.scaffali);
+      } else {
+        // stessa versione: uso i dati in cache
+        setDatiMagazzino(stored.scaffali);
+      }
+    })
+    .catch(err => console.error("Errore caricamento JSON:", err));
+}, []);
+
 
   useEffect(() => {
     if (datiMagazzino.length > 0) {
