@@ -1,0 +1,11 @@
+{
+  // ignora gli at-rule sconosciuti (es. @tailwind)
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
+  "less.lint.unknownAtRules": "ignore",
+
+  // tratta i file .css come PostCSS/Tailwind
+  "files.associations": {
+    "*.css": "postcss"
+  }
+}
