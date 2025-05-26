@@ -86,6 +86,12 @@
     "codici_extra": ["NJ2322"]
   },
   {
+    "scaffale": "A10",
+    "slug": "A10",
+    "serie": ["38","70 piccoli","7 piccoli","72 piccoli","NKIB59","719 piccoli","39","NKIA59","NJA59","NAXB59","30","AXK100135","NK","NKI","NJA59 economico","AS80105","GR","AS3552","RNA 2202 economico","AS2542","AXK","NKI economico","LR","LS","PWTR","NA","BIC","RNA","AXW","KXN4","NAO","NAO economico","RNAO","PNA","RPNA","BL","S 51105","S 51211","NA22","B72 piccoli","B70 piccoli","B73 piccoli","DRS","DL","62 ceramici","W511","ZM","LFE","ZMA","AX","CP","L","M","AM","TSNA"],
+    "codici_extra": ["70", "7", "72", "719", "62"]
+  },
+  {
     "scaffale": "A11 - Cuscinetti alte temperature BHT",
     "slug":"A11",
     "serie": ["608", "60", "63", "62"],
