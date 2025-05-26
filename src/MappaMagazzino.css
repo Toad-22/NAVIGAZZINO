@@ -1,12 +1,45 @@
-.map-svg rect {
-  fill: #ccc;
-  stroke: #888;
-  transition: fill 0.3s, stroke 0.3s;
+/* stili comuni */
+.map-container {
+  width: 100%;
 }
 
-.map-svg .highlight {
-  fill: rgba(255, 215, 0, 0.6);
-  stroke: #ffae00;
-  stroke-width: 2;
-  filter: drop-shadow(0 0 6px rgba(255, 215, 0, 0.8));
+/* desktop: niente scroll e mappa intera */
+@media (min-width: 640px) {
+  .map-container {
+    max-height: none;
+    overflow: visible;
+  }
+}
+
+/* mobile (appena sotto 640px): scroll e altezza limitata */
+@media (max-width: 639px) {
+  .map-container {
+    max-height: 60vh;
+    overflow: auto;
+    touch-action: pan-x pan-y;
+  }
+}
+
+/* l’SVG scala sempre al 100% della larghezza */
+.map-container svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* stili di default per rect e path */
+.map-container svg rect,
+.map-container svg path {
+  fill: #ccc;
+  stroke: #888;
+  transition: fill 0.3s, stroke 0.3s, filter 0.3s;
+}
+
+/* highlight */
+.map-container svg rect.highlight,
+.map-container svg path.highlight {
+  fill: rgba(255, 215, 0, 0.6) !important;
+  stroke: #ffae00 !important;
+  stroke-width: 2 !important;
+  filter: drop-shadow(0 0 6px rgba(255, 215, 0, 0.8)) !important;
 }
